@@ -15,7 +15,11 @@ qt_add_executable(appFinanceApp
 qt_add_qml_module(appFinanceApp
     URI FinanceApp
     VERSION 1.0
-    QML_FILES src/qml/Main.qml
+    QML_FILES
+    src/qml/Main.qml
+    src/qml/Pages/MainPage.qml
+    src/qml/Components/AppHeader.qml
+    src/qml/Components/AppFooter.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
